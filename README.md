@@ -1,5 +1,7 @@
 # Ember-subarray-proxy
 
+[![Build Status](https://travis-ci.org/salzhrani/ember-subarray-proxy.svg)](https://travis-ci.org/salzhrani/ember-subarray-proxy)
+
 This is an implementation of of `Ember.ArrayProxy` that allow for getting a slice of an array that is DOM friendly and efficient. If the content array changes the proxy doesn't tear down and rebuild the proxy, instead it conveys the actual changes if any.
 
 This project is inspired by [ember-cli-array-slice](https://github.com/j-/ember-cli-array-slice)
