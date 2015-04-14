@@ -52,6 +52,9 @@ export default Ember.ArrayProxy.extend({
         }
         var arrangedContentLength = get(this,'arrangedContent.length');
         var diff = value - this._limit;
+        if (diff > get(this,'content.length') - arrangedContentLength) {
+          diff = get(this,'content.length') - arrangedContentLength;
+        }
         this._limit = value;
         if (diff > 0) {
           this._shiftArranged(arrangedContentLength,0, diff);
