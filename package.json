@@ -1,6 +1,6 @@
 {
   "name": "ember-subarray-proxy",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/salzhrani/ember-subarray-proxy.git",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -34,10 +34,15 @@
     "ember-try": "0.0.4"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "array-slice",
+    "pagination",
+    "subarray",
+    "array-proxy"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.0.0"
+    "ember-cli-babel": "^5.0.0",
+    "ember-new-computed": "^1.0.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
